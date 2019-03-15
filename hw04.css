@@ -4,9 +4,3 @@ body {
     }
 h1 {color:#00ff00;}
 p.ex {color:rgb(0,0,150);}
-table{
-    width:150px;
-    height:100px;
-    border:1px solid;
-    vertical-align: middle;
-}
