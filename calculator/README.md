@@ -10,7 +10,7 @@
 
 2.利用document.getElementById('')取得元件
 
-3.利用<link rel="stylesheet" type="text/css" href="cal.css">將CSS套用至HTML
+3.利用link rel="stylesheet" type="text/css" href="cal.css"將CSS套用至HTML
 
 ## 說明
 
