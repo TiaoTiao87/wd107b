@@ -6,19 +6,19 @@
 
 ## 技術手段
 
-1.運用result.innerText = eval(a.value + cal.value + b.value)計算
+1.運用 result.innerText = eval(a.value + cal.value + b.value) 計算
 
-2.利用document.getElementById('')取得元件
+2.利用 document.getElementById('') 取得元件
 
-3.利用link rel="stylesheet" type="text/css" href="cal.css"將CSS套用至HTML
+3.利用 link rel="stylesheet" type="text/css" href="cal.css" 將CSS套用至HTML
 
 ## 說明
 
-1.輸入'a','b'兩數值及'cal'運算符號
+1.輸入 'a','b' 兩數值及 'cal' 運算符號
 
-2.計算"a+cal+b"
+2.計算 "a+cal+b"
 
-3.輸出result
+3.輸出 result
 
 ## 舉例
 
