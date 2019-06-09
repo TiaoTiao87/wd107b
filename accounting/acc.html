@@ -9,10 +9,11 @@
 	var b = parseInt(document.getElementById("box2").value);
 	var c = parseInt(document.getElementById("box3").value);
 	var d = parseInt(document.getElementById("box4").value);
-	if( d == 0 ) var e = a + b + c;
-	else var e = a + b + c + d ; 
-	 document.getElementById("box5").value = e; 
-	 if(e > 300){
+	var e = 0;
+	if( d == 0 ) e = a + b + c;
+	else e = a + b + c + d ; 
+	document.getElementById("box5").value = e; 
+	if(e > 300){
 		alert("TOOOOOO MUCH!");
 		}
 }
