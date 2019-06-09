@@ -8,9 +8,9 @@
 
 1.運用result.innerText = eval(a.value + cal.value + b.value)計算
 
-2.利用document.getElementById('a')取得元件
+2.利用document.getElementById('')取得元件
 
-3.利用<link rel="stylesheet" type="text/css" href="cal.css">更改背景顏色
+3.利用<link rel="stylesheet" type="text/css" href="cal.css">將CSS套用至HTML
 
 ## 說明
 
