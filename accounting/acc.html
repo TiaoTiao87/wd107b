@@ -10,7 +10,7 @@
 	var c = parseInt(document.getElementById("box3").value);
 	var d = parseInt(document.getElementById("box4").value);
 	var e = 0;
-	if( d == 0 ) e = a + b + c;
+	if( d == "" ) e = a + b + c;
 	else e = a + b + c + d ; 
 	document.getElementById("box5").value = e; 
 	if(e > 300){
