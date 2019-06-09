@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+
 # 簡易計算機
 
 ## 功能
