@@ -7,3 +7,5 @@
 ## 技術手段
 
 1.用 link rel="stylesheet" type="text/css" href="blog.css" 將CSS套用至HTML
+
+2.下拉式選單
