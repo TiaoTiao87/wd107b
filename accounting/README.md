@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+
 # 記帳小程式
 
 ## 功能
