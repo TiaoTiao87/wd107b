@@ -11,20 +11,20 @@ input { width:30px }
 <script>
   function calculate() {
     var a = document.getElementById('a')
-    var op = document.getElementById('op')
+    var op = document.getElementById('cal')
     var b = document.getElementById('b')
     var result = document.getElementById('result')
-    result.innerText = eval(a.value + op.value + b.value)
+    result.innerText = eval(a.value + cal.value + b.value)
   }
 </script>  
     <input id="a" type="text" value="6"/>
-    <select id="op">
+    <select id="cal">
       <option value="+">+</option>
       <option value="-">-</option>
       <option value="*" selected>*</option>
       <option value="/">/</option>
     </select>
-<!--    <input id="op" type="text" value="*"/>-->
+<!--    <input id="cal" type="text" value="*"/>-->
     <input id="b" type="text" value="12"/>
      = <label id="result"></label><br/><br/>
     <button onclick="calculate()">計算</button>
