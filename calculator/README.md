@@ -1,10 +1,10 @@
-#簡易計算機
+# 簡易計算機
 
-##功能
+## 功能
 
 1.使用簡單的四則運算
 
-##技術手段
+## 技術手段
 
 1.運用result.innerText = eval(a.value + cal.value + b.value)計算
 
@@ -12,7 +12,7 @@
 
 3.利用<link rel="stylesheet" type="text/css" href="cal.css">更改背景顏色
 
-##說明
+## 說明
 
 1.輸入'a','b'兩數值及'cal'運算符號
 
