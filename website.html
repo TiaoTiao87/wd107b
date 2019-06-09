@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="blog.css">
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  </div> 
+</div>
+
+<center><table width="100%">
+  <tr>
+    <td Align="center">張育騰</td>
+  </tr>
+  <tr>
+    <td Align="right" height="25">2019-06-09</td>
+  </tr>
+</table>
+<table Border=1 width="50%">
+  <tr>
+    <td Align="center">姓名</td>
+    <td Align="center">張育騰</td>
+  </tr>
+  <tr>
+    <td Align="center">職業</td>
+    <td Align="center">學生</td>
+  </tr>
+  <tr>
+    <td Align="center">年齡</td>
+    <td Align="center">18</td>
+  </tr>
+  <tr>
+    <td Align="center">生日</td>
+    <td Align="center">2000-06-12</td>
+  </tr>
+  <tr>
+    <td Align="center">Facebook</td>
+      <td Align="center"><a href="https://www.facebook.com/people/%E5%BC%B5%E8%82%B2%E9%A8%B0/100000460132605">張育騰</a>	   </td>
+  <tr>
+    <td Align="center">興趣</td>
+    <td Align="center">打羽球</td>
+  </tr>
+  <tr>
+    <td Align="center">愛好</td>
+    <td Align="center"><img src="https://d26hyti2oua2hb.cloudfront.net/square/160/shops/profile/201808231514-0vB0F.jpg"></td>
+  </tr>
+</table></center>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
