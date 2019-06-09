@@ -1,39 +1,23 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="cal.css">
-<html lang="zh">
-    <head>
-        <title>簡易計算機</title>
-    </head>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	input { width:30px }      
+</style>
+</head>
 <body>
-<table>
-	<tr>
-	<input type="text"  value="0" id="box" disabled style="width:150px;height:30px;">
-	</tr>
-	<tr>
-		<td><input type="button" value="7" onClick="numberBtn('7')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="8" onClick="numberBtn('8')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="9" onClick="numberBtn('9')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="+" onClick="cal('+')" style="width:50px;height:30px;"></td>
-	</tr>
-	<tr>
-		<td><input type="button" value="4" onClick="numberBtn('4')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="5" onClick="numberBtn('5')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="6" onClick="numberBtn('6')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="-" onClick="cal('-')" style="width:50px;height:30px;"></td>
-	</tr>
-	<tr>
-		<td><input type="button" value="1" onClick="numberBtn('1')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="2" onClick="numberBtn('2')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="3" onClick="numberBtn('3')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="*" onClick="cal('*')" style="width:50px;height:30px;"></td>
-	</tr>
-	<tr>
-		<td><input type="button" value="0" onClick="numberBtn('0')" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="C" onClick="BtnC()" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="=" onClick="equal()" style="width:50px;height:30px;"></td>
-		<td><input type="button" value="/" onClick="cal('/')" style="width:50px;height:30px;"></td>
-	</tr>
-</table>
-<script src="scripts/cal.js"></script>
-</body>
+	<script src="scripts/main.js"></script>   
+	<input id="a" type="text" value="3"/>
+	<select id="op">
+		<option value="+">+</option>
+        	<option value="-">-</option>
+        	<option value="*" selected>*</option>
+        	<option value="/">/</option>
+	</select>
+<!--    <input id="op" type="text" value="*"/>-->
+    <input id="b" type="text" value="5"/>
+     = <label id="result"></label><br/><br/>
+    <button onclick="calculate()">計算</button>
+  </body>
 </html>
