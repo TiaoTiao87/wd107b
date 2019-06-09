@@ -22,8 +22,8 @@
 
 2.利用 link rel="stylesheet" type="text/css" href=".css" 將CSS套用至HTML
 
-### [簡易計算機](https://tiaotiao87.github.io/wd107b/calculator/README.md)
+### [簡易計算機](cal.md)
 
-### [記帳小程式](https://tiaotiao87.github.io/wd107b/accounting/README.md)
+### [記帳小程式](acc.md)
 
-### [飲料訂購單](https://tiaotiao87.github.io/wd107b/drink/README.md)
+### [飲料訂購單](drink.md)
