@@ -12,7 +12,7 @@
 
 1.利用document.getElementById()取得各消費金額
 
-2.利用<link rel="stylesheet" type="text/css" href="acc.css">將CSS套用至HTML
+2.利用 link rel="stylesheet" type="text/css" href="acc.css" 將CSS套用至HTML
 
 ## 舉例
 
