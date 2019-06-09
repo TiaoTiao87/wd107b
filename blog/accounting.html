@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="blog.css">
+  <meta charset="utf-8">
+  <title>110710501
+  </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="blog.css">
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">作品
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="https://tiaotiao87.github.io/wd107b/blog/drink.html">飲料訂購單</a>
+    <a href="https://tiaotiao87.github.io/wd107b/blog/accounting.html">記帳小程式</a>
+    <a href="https://tiaotiao87.github.io/wd107b/blog/calculator.html">簡易計算機</a>
+  </div>
+  </div> 
+</div>
+
+	<link rel="stylesheet" type="text/css" href="acc.css">
+	<center><h2>My Website</h2></center>
+		<marquee direction="right" scrollamount="10" height= "50">Accounting Program</marquee>	
+  <ul>
+		<li><a href="https://github.com/tiaotiao87">My Github =)</a></li>
+	</ul>
+	<h3><center>Accounting</center></h3>
+	<center>
+	breakfast<input type="text"  id="box1" value=""><br>
+	lunch    <input type="text"  id="box2" value=""><br>
+	dinner   <input type="text"  id="box3" value=""><br>
+	other    <input type="text"  id="box4" value=""><br>
+	<button onclick="add()" >Sum</button><br>
+	今天的花滴扣扣<input type="text" name="result" id="box5" value=""></output>
+	</center>
+</body>
+<script>
+function add(){
+	var a = parseInt(document.getElementById("box1").value);
+	var b = parseInt(document.getElementById("box2").value);
+	var c = parseInt(document.getElementById("box3").value);
+	var d = parseInt(document.getElementById("box4").value);
+	var e = 0;
+	if( d == "" ) e = a + b + c;
+	else e = a + b + c + d ; 
+	document.getElementById("box5").value = e; 
+	if(e > 300){
+		alert("TOOOOOO MUCH!");
+		}
+}
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
