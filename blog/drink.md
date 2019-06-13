@@ -8,8 +8,6 @@
 
 2.清除功能
 
-3.暫時沒有運用listBox
-
 ## 技術手段
 
 1.利用 input type="radio" name="" value="" 選擇甜度及冰塊
